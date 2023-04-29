@@ -10,7 +10,7 @@ def main():
     try:
         archivo = open(args.file) 
     except:
-        print("Error: por favor seleccione un archivo válido")
+        sys.stdout.write("Error: por favor seleccione un archivo válido")
         return 
     lineas = archivo.readlines()
     numero_linea = 0
